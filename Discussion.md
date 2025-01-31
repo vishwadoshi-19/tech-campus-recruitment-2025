@@ -30,6 +30,8 @@ The chosen solution reads the log file line-by-line, checks if the line starts w
 
    Extract the zipped file and place the `logs_2024.log` file inside the `src` directory
 
+   Note : the `logs_2024.log` file is not pushed to github as its size is large
+
 2. **Run the Log Extraction Script inside the `src` directory:**
    ```sh
    python extract_logs.py YYYY-MM-DD
