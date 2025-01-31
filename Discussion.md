@@ -34,7 +34,7 @@ The chosen solution reads the log file line-by-line, checks if the line starts w
 
 2. **Run the Log Extraction Script inside the `src` directory:**
    ```sh
-   python extract_logs.py YYYY-MM-DD
+   node extractLogs.js YYYY-MM-DD
    ```
    Replace `YYYY-MM-DD` with the desired date.
 
@@ -43,11 +43,3 @@ The chosen solution reads the log file line-by-line, checks if the line starts w
 - Non-existent log file (handled with error messages)
 - Dates with no log entries (creates an empty output file)
 - Large file handling without excessive memory usage
-- **Generate a Sample Log File:**
-
-  - Since the earlier provided log file was not downloadable, a script `generate_random_log_file.py` was created to generate a sample log file named `test_logs.log`.
-  - Run the script to generate the log file:
-
-    ```sh
-    python generate_random_log_file.py
-    ```
