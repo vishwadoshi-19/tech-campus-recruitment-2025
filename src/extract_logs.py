@@ -23,5 +23,5 @@ if __name__ == "__main__":
         sys.exit(1)
     
     date = sys.argv[1]
-    log_file = "test_logs.log"  # Update with actual path
+    log_file = "logs_2024.log"  # Update with actual path
     extract_logs(log_file, date)

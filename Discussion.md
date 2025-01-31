@@ -24,22 +24,13 @@ The chosen solution reads the log file line-by-line, checks if the line starts w
 
 ## Steps to Run
 
-1. **Generate a Sample Log File:**
+1. **Download the log file:**
+   To download the log file, visit :
+   `https://limewire.com/d/0c95044f-d489-4101-bf1a-ca48839eea86#cVKnm0pKXpN6pjsDwav4f5MNssotyy0C8Xvaor1bA5U`
 
-   - Since the provided log file was not downloadable, a script `generate_random_log_file.py` was created to generate a sample log file named `test_logs.log`.
-   - Run the script to generate the log file:
+   Extract the zipped file and place the `logs_2024.log` file inside the `src` directory
 
-     ```sh
-     python generate_random_log_file.py
-     ```
-
-2. **If the download works , simply download the test_logs.log file from there:**
-   To download the log file, run the following command in your terminal:
-
-   - Run the script to generate the log file:
-     `curl -L -o test_logs.log "https://limewire.com/d/90794bb3-6831-4e02-8a59-ffc7f3b8b2a3#X1xnzrH5s4H_DKEkT_dfBuUT1mFKZuj4cFWNoMJGX98"`
-
-3. **Run the Log Extraction Script:**
+2. **Run the Log Extraction Script inside the `src` directory:**
    ```sh
    python extract_logs.py YYYY-MM-DD
    ```
@@ -50,3 +41,11 @@ The chosen solution reads the log file line-by-line, checks if the line starts w
 - Non-existent log file (handled with error messages)
 - Dates with no log entries (creates an empty output file)
 - Large file handling without excessive memory usage
+- **Generate a Sample Log File:**
+
+  - Since the earlier provided log file was not downloadable, a script `generate_random_log_file.py` was created to generate a sample log file named `test_logs.log`.
+  - Run the script to generate the log file:
+
+    ```sh
+    python generate_random_log_file.py
+    ```
