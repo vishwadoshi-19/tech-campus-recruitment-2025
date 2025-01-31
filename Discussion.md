@@ -24,11 +24,22 @@ The chosen solution reads the log file line-by-line, checks if the line starts w
 
 ## Steps to Run
 
-1. **Download the Log File:**
-   ```sh
-   curl -L -o test_logs.log "https://limewire.com/d/90794bb3-6831-4e02-8a59-ffc7f3b8b2a3#X1xnzrH5s4H_DKEkT_dfBuUT1mFKZuj4cFWNoMJGX98"
-   ```
-2. **Run the Python Script:**
+1. **Generate a Sample Log File:**
+
+   - Since the provided log file was not downloadable, a script `generate_random_log_file.py` was created to generate a sample log file named `test_logs.log`.
+   - Run the script to generate the log file:
+
+     ```sh
+     python generate_random_log_file.py
+     ```
+
+2. **If the download works , simply download the test_logs.log file from there:**
+   To download the log file, run the following command in your terminal:
+
+   - Run the script to generate the log file:
+     `curl -L -o test_logs.log "https://limewire.com/d/90794bb3-6831-4e02-8a59-ffc7f3b8b2a3#X1xnzrH5s4H_DKEkT_dfBuUT1mFKZuj4cFWNoMJGX98"`
+
+3. **Run the Log Extraction Script:**
    ```sh
    python extract_logs.py YYYY-MM-DD
    ```
